@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PSYFR Project Hub</title>
+<meta name="description" content="Hub for the PSYFR / Ophis predictive-chronology projects: every repository, its live site and its test status.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#07070c; --bg2:#0d0d18; --ink:#ece5d2; --dim:#9c947c; --gold:#d8a943; --gold2:#f3d27a; --line:#2a2618; --ok:#7faa5a; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:18px/1.6 "EB Garamond", Georgia, serif; }
+  main { max-width:960px; margin:0 auto; padding:56px 16px 72px; }
+  h1 { font:800 clamp(28px,6vw,48px)/1.1 Cinzel, serif; letter-spacing:.06em; color:var(--gold2); margin:0 0 8px; }
+  .sub { color:var(--dim); font-style:italic; margin:0 0 44px; }
+  section.repo { background:var(--bg2); border:1px solid var(--line); border-radius:8px; padding:22px 22px 18px; margin:0 0 22px; }
+  .tier { font:600 12px/1 "IBM Plex Mono", monospace; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); }
+  h2 { font:600 clamp(20px,4vw,26px)/1.25 Cinzel, serif; margin:8px 0 4px; color:var(--gold2); overflow-wrap:anywhere; }
+  .desc { color:var(--dim); margin:0 0 12px; }
+  .meta { display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; font:14px/1.4 "IBM Plex Mono", monospace; margin-bottom:14px; }
+  .meta img { height:20px; display:block; }
+  ul.apps { list-style:none; margin:0; padding:0 0 0 18px; border-left:1px solid var(--line); }
+  ul.apps li { margin:8px 0; position:relative; }
+  ul.apps li::before { content:""; position:absolute; left:-18px; top:.8em; width:12px; border-top:1px solid var(--line); }
+  ul.apps b { font-weight:500; }
+  ul.apps span { color:var(--dim); }
+  a { color:var(--gold2); }
+  a:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
+  footer { margin-top:48px; color:var(--dim); font-size:15px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>PSYFR Project Hub</h1>
+  <p class="sub">Predictive-chronology instruments built around the Ophis engine and the Archaix thesis: every repository, what it publishes, and whether its tests pass.</p>
+
+  <section class="repo">
+    <div class="tier">Engine · reverse-engineering &amp; rebuilds</div>
+    <h2>NatorionCipherPredictiveEngine</h2>
+    <p class="desc">Ophis v12 taken apart, studied, and rebuilt front-end-only. Each rebuild is checked against the original engine by a parity test.</p>
+    <div class="meta">
+      <a href="https://bradleyhomelinuxnet-prog.github.io/NatorionCipherPredictiveEngine/">Live site</a>
+      <a href="https://github.com/bradleyhomelinuxnet-prog/NatorionCipherPredictiveEngine">Source</a>
+      <a href="https://github.com/bradleyhomelinuxnet-prog/NatorionCipherPredictiveEngine/actions/workflows/tests.yml"><img alt="Tests status" src="https://github.com/bradleyhomelinuxnet-prog/NatorionCipherPredictiveEngine/actions/workflows/tests.yml/badge.svg"></a>
+    </div>
+    <ul class="apps">
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/NatorionCipherPredictiveEngine/natorion/"><b>Natorion Cipher</b></a> <span>: the flagship, with the v12 engine joined to the Chronicon clocks plus a production Studio</span></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/NatorionCipherPredictiveEngine/web/"><b>Ophis Web</b></a> <span>: the v12 engine with a new interface, no build step</span></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/NatorionCipherPredictiveEngine/ophis/"><b>Ophis v12 in a browser</b></a> <span>: the original renderer with Electron swapped for a browser bridge</span></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/NatorionCipherPredictiveEngine/Ophis_v12_ReverseEngineering_Report.html"><b>Reverse-engineering report</b></a> <span>: the case study</span></li>
+    </ul>
+  </section>
+
+  <section class="repo">
+    <div class="tier">Application · the chronology engine</div>
+    <h2>natori-on-psyfr</h2>
+    <p class="desc">The serpent that rings the egg of time. Ophis predictive grammar × Chronicon calendrics, self-contained and air-gap friendly.</p>
+    <div class="meta">
+      <a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/">Live site</a>
+      <a href="https://github.com/bradleyhomelinuxnet-prog/natori-on-psyfr">Source</a>
+      <a href="https://github.com/bradleyhomelinuxnet-prog/natori-on-psyfr/actions/workflows/test.yml"><img alt="Tests status" src="https://github.com/bradleyhomelinuxnet-prog/natori-on-psyfr/actions/workflows/test.yml/badge.svg"></a>
+    </div>
+    <ul class="apps">
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/"><b>The Predictive Chronology Engine</b></a></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/field-guide.html"><b>Field guide</b></a> · <a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/manual.html"><b>Manual</b></a> · <a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/whitepaper.html"><b>Whitepaper</b></a></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/chronicon.html"><b>Chronicon</b></a> <span>: clocks and calendrics</span></li>
+    </ul>
+  </section>
+
+  <section class="repo">
+    <div class="tier">Companion · instruments, guides &amp; film kit</div>
+    <h2>phoenix-chronicles-tools</h2>
+    <p class="desc">Companion toolkit for <em>The Phoenix CODEX 138 Palindromic</em>, plus a study of the Ophis v9 cycle engine.</p>
+    <div class="meta">
+      <a href="https://bradleyhomelinuxnet-prog.github.io/phoenix-chronicles-tools/">Live site</a>
+      <a href="https://github.com/bradleyhomelinuxnet-prog/phoenix-chronicles-tools">Source</a>
+    </div>
+    <ul class="apps">
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/phoenix-chronicles-tools/PSYFR1.html"><b>PSYFR1</b></a> <span>: the predictive chronology engine</span></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/phoenix-chronicles-tools/PSYFR2.html"><b>PSYFR2</b></a> <span>: its field guide</span></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/phoenix-chronicles-tools/OPHIS.html"><b>Ophis v9 field guide</b></a></li>
+    </ul>
+  </section>
+
+  <footer><a href="https://github.com/bradleyhomelinuxnet-prog">github.com/bradleyhomelinuxnet-prog</a></footer>
+</main>
+</body>
+</html>
