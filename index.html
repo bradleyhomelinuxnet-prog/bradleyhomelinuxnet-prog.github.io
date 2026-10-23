@@ -6,8 +6,8 @@
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <base target="_blank">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PSYFR Project Hub</title>
-<meta name="description" content="Hub for the PSYFR / Ophis predictive-chronology projects: every repository, its live site and its test status.">
+<title>Bradley Rogue · Project Hub</title>
+<meta name="description" content="Every project by Bradley Rogue / Hollywood Rogue Ventures: the PSYFR predictive-chronology instruments, the Chronotecture atlas, Claude skills for video, and small tested examples, with live sites and test status.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -16,13 +16,17 @@
   body { margin:0; background:var(--bg); color:var(--ink); font:18px/1.6 "EB Garamond", Georgia, serif; }
   main { max-width:960px; margin:0 auto; padding:56px 16px 72px; }
   h1 { font:800 clamp(28px,6vw,48px)/1.1 Cinzel, serif; letter-spacing:.06em; color:var(--gold2); margin:0 0 8px; }
-  .sub { color:var(--dim); font-style:italic; margin:0 0 44px; }
+  .sub { color:var(--dim); font-style:italic; margin:0 0 20px; }
+  nav.jump { display:flex; flex-wrap:wrap; gap:6px 18px; font:13px/1.4 "IBM Plex Mono", monospace; letter-spacing:.08em; text-transform:uppercase; margin:0 0 40px; padding:12px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  nav.jump a { text-decoration:none; }
+  h3.group { font:600 13px/1 "IBM Plex Mono", monospace; letter-spacing:.2em; text-transform:uppercase; color:var(--dim); margin:44px 0 16px; }
   section.repo { background:var(--bg2); border:1px solid var(--line); border-radius:8px; padding:22px 22px 18px; margin:0 0 22px; }
   .tier { font:600 12px/1 "IBM Plex Mono", monospace; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); }
   h2 { font:600 clamp(20px,4vw,26px)/1.25 Cinzel, serif; margin:8px 0 4px; color:var(--gold2); overflow-wrap:anywhere; }
   .desc { color:var(--dim); margin:0 0 12px; }
   .meta { display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; font:14px/1.4 "IBM Plex Mono", monospace; margin-bottom:14px; }
   .meta img { height:20px; display:block; }
+  .new { font:600 11px/1 "IBM Plex Mono", monospace; letter-spacing:.12em; color:var(--bg); background:var(--gold); border-radius:3px; padding:3px 6px; vertical-align:middle; margin-left:8px; }
   ul.apps { list-style:none; margin:0; padding:0 0 0 18px; border-left:1px solid var(--line); }
   ul.apps li { margin:8px 0; position:relative; }
   ul.apps li::before { content:""; position:absolute; left:-18px; top:.8em; width:12px; border-top:1px solid var(--line); }
@@ -30,18 +34,48 @@
   ul.apps span { color:var(--dim); }
   a { color:var(--gold2); }
   a:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
-  footer { margin-top:48px; color:var(--dim); font-size:15px; }
+  footer { margin-top:48px; color:var(--dim); font-size:15px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px 24px; }
+  .sigil { font:13px/1.6 "IBM Plex Mono", monospace; letter-spacing:.1em; }
 </style>
 </head>
 <body>
 <main>
-  <h1>PSYFR Project Hub</h1>
-  <p class="sub">Predictive-chronology instruments built around the Ophis engine and the Archaix thesis: every repository, what it publishes, and whether its tests pass.</p>
+  <h1>Bradley Rogue · Project Hub</h1>
+  <p class="sub">Hollywood Rogue Ventures. Predictive-chronology instruments built around the Ophis engine and the Archaix thesis, a study atlas of <em>Chronotecture</em>, Claude skills that turn AI clips into finished films, and a few small tested examples. Every repository, what it publishes, and whether its tests pass.</p>
+
+  <nav class="jump" aria-label="Sections">
+    <a href="#psyfr" target="_self">PSYFR instruments</a>
+    <a href="#atlas" target="_self">Research atlas</a>
+    <a href="#video" target="_self">Video tools</a>
+    <a href="#examples" target="_self">Small examples</a>
+    <a href="#elsewhere" target="_self">Elsewhere</a>
+  </nav>
+
+  <h3 class="group" id="psyfr">PSYFR · predictive chronology</h3>
+
+  <section class="repo">
+    <div class="tier">Application · the chronology engine</div>
+    <h2>natori-on-psyfr</h2>
+    <p class="desc">A ground-up rebuild of Ophis v12, verified bit-exact against the shipped app, with the Natorion / Chronicon cycle layer on top: Julian-day palindromes, Maya Long Count, the 19-year Metonic, Phoenix and Nemesis cycles, and a convergence finder. No server, no dependencies, works offline.</p>
+    <div class="meta">
+      <a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/">Live site</a>
+      <a href="https://github.com/bradleyhomelinuxnet-prog/natori-on-psyfr">Source</a>
+      <a href="https://github.com/bradleyhomelinuxnet-prog/natori-on-psyfr/actions/workflows/test.yml"><img alt="Tests status" src="https://github.com/bradleyhomelinuxnet-prog/natori-on-psyfr/actions/workflows/test.yml/badge.svg"></a>
+    </div>
+    <ul class="apps">
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/"><b>OPHIS · Pattern-Recognition Event Prediction</b></a> <span>: the rebuilt engine (all-in-one build: <a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/ophis-single.html">ophis-single</a>)</span></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/chronicon.html"><b>The Predictive Chronology Engine</b></a> <span>: Chronicon clocks, cycles and calendrics (also as <a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/PSYFR1.html">PSYFR1</a>)</span></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/natori-on-cyphr.html"><b>NATORI-ON-CYPHR</b></a> <span>: the cipher-side chronology engine</span></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/OPHIS-Natorion-Cipher.html"><b>OPHIS · Natorion Cipher</b></a> <span>: the single-file Natorion build</span></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/ophis/"><b>Original Ophis app</b></a> <span>: the jQuery-era renderer, for comparison</span></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/manual.html"><b>Manual</b></a> · <a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/field-guide.html"><b>Ophis field guide</b></a> · <a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/guide.html"><b>PSYFR field guide</b></a> · <a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/whitepaper.html"><b>Whitepaper</b></a> · <a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/docs/html/"><b>Full documentation</b></a></li>
+    </ul>
+  </section>
 
   <section class="repo">
     <div class="tier">Engine · reverse-engineering &amp; rebuilds</div>
     <h2>NatorionCipherPredictiveEngine</h2>
-    <p class="desc">Ophis v12 taken apart, studied, and rebuilt front-end-only. Each rebuild is checked against the original engine by a parity test.</p>
+    <p class="desc">Ophis v12 taken apart, studied, and rebuilt front-end-only. Each rebuild is checked against the original engine by a parity test. Ophis Web now carries optional Fibonacci, Geodetic (138) and Diurnal tags.</p>
     <div class="meta">
       <a href="https://bradleyhomelinuxnet-prog.github.io/NatorionCipherPredictiveEngine/">Live site</a>
       <a href="https://github.com/bradleyhomelinuxnet-prog/NatorionCipherPredictiveEngine">Source</a>
@@ -52,68 +86,102 @@
       <li><a href="https://bradleyhomelinuxnet-prog.github.io/NatorionCipherPredictiveEngine/natorion/#chronicon"><b>Natorion Chronicon</b></a> <span>: straight to its clocks, year dial, long cycles, moon, calendar wall and ledger</span></li>
       <li><a href="https://bradleyhomelinuxnet-prog.github.io/NatorionCipherPredictiveEngine/web/"><b>Ophis Web</b></a> <span>: the v12 engine with a new interface, no build step</span></li>
       <li><a href="https://bradleyhomelinuxnet-prog.github.io/NatorionCipherPredictiveEngine/ophis/"><b>Ophis v12 in a browser</b></a> <span>: the original renderer with Electron swapped for a browser bridge</span></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/NatorionCipherPredictiveEngine/phoenix-player/"><b>Phoenix Player</b></a> <span class="new">NEW</span> <span>: drop in a master asset index and play the stills and clips in order, with .m3u export</span></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/NatorionCipherPredictiveEngine/Ophis_v12_Hardened_Engine_Lab.html"><b>Hardened Engine Lab</b></a> <span>: the proof-of-fix, a sandboxed parser tested for parity and injection resistance</span></li>
       <li><a href="https://bradleyhomelinuxnet-prog.github.io/NatorionCipherPredictiveEngine/Ophis_v12_ReverseEngineering_Report.html"><b>Reverse-engineering report</b></a> <span>: the case study</span></li>
-    </ul>
-  </section>
-
-  <section class="repo">
-    <div class="tier">Application · the chronology engine</div>
-    <h2>natori-on-psyfr</h2>
-    <p class="desc">The serpent that rings the egg of time. Ophis predictive grammar × Chronicon calendrics, self-contained and air-gap friendly.</p>
-    <div class="meta">
-      <a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/">Live site</a>
-      <a href="https://github.com/bradleyhomelinuxnet-prog/natori-on-psyfr">Source</a>
-      <a href="https://github.com/bradleyhomelinuxnet-prog/natori-on-psyfr/actions/workflows/test.yml"><img alt="Tests status" src="https://github.com/bradleyhomelinuxnet-prog/natori-on-psyfr/actions/workflows/test.yml/badge.svg"></a>
-    </div>
-    <ul class="apps">
-      <li><a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/"><b>The Predictive Chronology Engine</b></a></li>
-      <li><a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/field-guide.html"><b>Field guide</b></a> · <a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/manual.html"><b>Manual</b></a> · <a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/whitepaper.html"><b>Whitepaper</b></a></li>
-      <li><a href="https://bradleyhomelinuxnet-prog.github.io/natori-on-psyfr/chronicon.html"><b>Chronicon</b></a> <span>: clocks and calendrics</span></li>
     </ul>
   </section>
 
   <section class="repo">
     <div class="tier">Companion · instruments, guides &amp; film kit</div>
     <h2>phoenix-chronicles-tools</h2>
-    <p class="desc">Companion toolkit for <em>The Phoenix CODEX 138 Palindromic</em>, plus a study of the Ophis v9 cycle engine.</p>
+    <p class="desc">Companion toolkit for <em>The Phoenix CODEX 138 Palindromic</em>, a study of the Ophis v9 cycle engine, and the written side of the films: <em>LIVE ON TIME · EMIT NO EVIL</em>, the <em>Ere We Were</em> station films and <em>The Chronologist's Machine</em>.</p>
     <div class="meta">
-      <a href="https://bradleyhomelinuxnet-prog.github.io/phoenix-chronicles-tools/">Live site</a>
+      <a href="https://bradleyhomelinuxnet-prog.github.io/phoenix-chronicles-tools/PSYFR1.html">Live site</a>
       <a href="https://github.com/bradleyhomelinuxnet-prog/phoenix-chronicles-tools">Source</a>
+      <a href="https://hollywood-rogue-ai-ventures.w3spaces.com/PSYFR1.html">Mirror</a>
     </div>
     <ul class="apps">
       <li><a href="https://bradleyhomelinuxnet-prog.github.io/phoenix-chronicles-tools/PSYFR1.html"><b>PSYFR1</b></a> <span>: the predictive chronology engine</span></li>
       <li><a href="https://bradleyhomelinuxnet-prog.github.io/phoenix-chronicles-tools/PSYFR2.html"><b>PSYFR2</b></a> <span>: its field guide</span></li>
       <li><a href="https://bradleyhomelinuxnet-prog.github.io/phoenix-chronicles-tools/OPHIS.html"><b>Ophis v9 field guide</b></a></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/phoenix-chronicles-tools/films/generators/engine-web/site/engine.html"><b>The Ere We Were Engine</b></a> <span class="new">NEW</span> <span>: a live browser demo of the engine that builds the station films</span></li>
+      <li><a href="https://github.com/bradleyhomelinuxnet-prog/phoenix-chronicles-tools/tree/main/films"><b>Film production kit</b></a> <span>: handoffs, station sheets, the station-film skill, walker transcripts and generators</span></li>
     </ul>
   </section>
 
   <section class="repo">
     <div class="tier">Builds · single-file instruments</div>
     <h2>OPHIS-Pattern-Recognition-Event-Prediction_files</h2>
-    <p class="desc">Working builds of the Ophis instrument and the Chronicon engine, each one self-contained HTML file. The maintained versions live in natori-on-psyfr and NatorionCipherPredictiveEngine.</p>
+    <p class="desc">Working builds of the Ophis instrument and the Chronicon engine, each one self-contained HTML file, all carrying the Extras and the ten Mirrors packs. The maintained versions live in natori-on-psyfr and NatorionCipherPredictiveEngine.</p>
     <div class="meta">
       <a href="https://bradleyhomelinuxnet-prog.github.io/OPHIS-Pattern-Recognition-Event-Prediction_files/">Live site</a>
       <a href="https://github.com/bradleyhomelinuxnet-prog/OPHIS-Pattern-Recognition-Event-Prediction_files">Source</a>
     </div>
     <ul class="apps">
       <li><a href="https://bradleyhomelinuxnet-prog.github.io/OPHIS-Pattern-Recognition-Event-Prediction_files/"><b>OPHIS · Natorion Cipher build</b></a></li>
-      <li><a href="https://bradleyhomelinuxnet-prog.github.io/OPHIS-Pattern-Recognition-Event-Prediction_files/ophis-single.html"><b>Single-file engine</b></a></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/OPHIS-Pattern-Recognition-Event-Prediction_files/ophis-single.html"><b>Single-file engine</b></a> · <a href="https://bradleyhomelinuxnet-prog.github.io/OPHIS-Pattern-Recognition-Event-Prediction_files/ophis-psyfy-natorion-cipher.html"><b>PSYFY build</b></a></li>
       <li><a href="https://bradleyhomelinuxnet-prog.github.io/OPHIS-Pattern-Recognition-Event-Prediction_files/instrument-copy.html"><b>Ophis Web</b></a> <span>: the date projection engine</span></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/OPHIS-Pattern-Recognition-Event-Prediction_files/Ophis_v12_Browser/"><b>Ophis v12 in a browser</b></a></li>
       <li><a href="https://bradleyhomelinuxnet-prog.github.io/OPHIS-Pattern-Recognition-Event-Prediction_files/Chronicon_Engine_v2.html"><b>Chronicon Engine v2</b></a> <span>: clocks and calendrics</span></li>
     </ul>
   </section>
 
+  <h3 class="group" id="atlas">Research atlas</h3>
+
   <section class="repo">
-    <div class="tier">Algorithms · small, tested examples</div>
+    <div class="tier">Study edition · 119 plates, rebuilt as interactives</div>
+    <h2>Chronotecture-Charts <span class="new">NEW</span></h2>
+    <p class="desc">A navigable study edition of Jason M. Breshears' <em>Chronotecture: The Lost Science of Prophetic Engineering</em> (2017): all 119 plates with a pan-zoom-rotate viewer, cleaned transcriptions and atlas search, hand-rebuilt interactive charts, an Engine view for every plate, and an arithmetic audit of every sum and span.</p>
+    <div class="meta">
+      <a href="https://bradleyhomelinuxnet-prog.github.io/Chronotecture-Charts/">Live site</a>
+      <a href="https://github.com/bradleyhomelinuxnet-prog/Chronotecture-Charts">Source</a>
+      <a href="https://hollywood-rogue-ai-ventures.w3spaces.com/Chronotecture-Charts/index.html">Mirror</a>
+    </div>
+    <ul class="apps">
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/Chronotecture-Charts/"><b>The atlas</b></a> <span>: featured interactives and all 119 plates</span></li>
+      <li><a href="https://bradleyhomelinuxnet-prog.github.io/Chronotecture-Charts/redesign/chart-i.html"><b>Chart I</b></a> · <a href="https://bradleyhomelinuxnet-prog.github.io/Chronotecture-Charts/redesign/great-step.html"><b>The Great Step</b></a> · <a href="https://bradleyhomelinuxnet-prog.github.io/Chronotecture-Charts/redesign/constellation.html"><b>The Constellation</b></a> <span>: rebuilt interactives</span></li>
+      <li><a href="https://github.com/bradleyhomelinuxnet-prog/Chronotecture-Charts/blob/main/AUDIT.md"><b>Arithmetic audit</b></a> <span>: every chart sum checked, plate by plate</span></li>
+    </ul>
+  </section>
+
+  <h3 class="group" id="video">Video tools</h3>
+
+  <section class="repo">
+    <div class="tier">Claude skills · finished film from footage you own</div>
+    <h2>rogue-walker-studio <span class="new">NEW</span></h2>
+    <p class="desc">Seven Claude skills that turn a folder of clips and a script into a captioned, voiced, loopable reel with frame-exact timing, without spending a generation credit: the rogue-ai director, the palindromic walker-reel engine, a clip captioner, house looks, a FilmCraft MCP bridge, an ArtCraft bridge, and a credit-budget planner. Its example, <em>The Deposition</em>, is 19 clips and 276 seconds (138 × 2).</p>
+    <div class="meta">
+      <a href="https://github.com/bradleyhomelinuxnet-prog/rogue-walker-studio">Source</a>
+      <a href="https://github.com/bradleyhomelinuxnet-prog/rogue-walker-studio/tree/main/dist">Download skills</a>
+      <a href="https://rogue-ventures-portfolio.com/">Setup &amp; support</a>
+      <a href="https://github.com/bradleyhomelinuxnet-prog/rogue-walker-studio/actions/workflows/validate.yml"><img alt="Validate status" src="https://github.com/bradleyhomelinuxnet-prog/rogue-walker-studio/actions/workflows/validate.yml/badge.svg"></a>
+    </div>
+  </section>
+
+  <section class="repo">
+    <div class="tier">Working copy · third-party tool</div>
+    <h2>CopyCatCreator-REA <span class="new">NEW</span></h2>
+    <p class="desc">My working copy of <a href="https://github.com/morluto/rea">REA: Reverse Engineer Anything</a> by morluto (MIT), one MCP for reverse engineering across binaries, applications and runtime behaviour. Not my work; for the official release, use the upstream repository or <a href="https://rea.tools/">rea.tools</a>.</p>
+    <div class="meta">
+      <a href="https://github.com/bradleyhomelinuxnet-prog/CopyCatCreator-REA">Source</a>
+      <a href="https://github.com/morluto/rea">Upstream</a>
+    </div>
+  </section>
+
+  <h3 class="group" id="examples">Small, tested examples</h3>
+
+  <section class="repo">
+    <div class="tier">Algorithms</div>
     <h2>luhn-algorithm</h2>
-    <p class="desc">The Luhn (mod 10) checksum behind card numbers and IMEIs: validate numbers and compute check digits.</p>
+    <p class="desc">The Luhn (mod 10) checksum behind card numbers and IMEIs: validate numbers and compute check digits, with a step-by-step checker.</p>
     <div class="meta">
       <a href="https://bradleyhomelinuxnet-prog.github.io/luhn-algorithm/">Live demo</a>
       <a href="https://github.com/bradleyhomelinuxnet-prog/luhn-algorithm">Source</a>
       <a href="https://github.com/bradleyhomelinuxnet-prog/luhn-algorithm/actions/workflows/test.yml"><img alt="Tests status" src="https://github.com/bradleyhomelinuxnet-prog/luhn-algorithm/actions/workflows/test.yml/badge.svg"></a>
     </div>
     <h2>fizzbuzz</h2>
-    <p class="desc">FizzBuzz with pluggable rules: add 7 → Bazz and nothing else changes.</p>
+    <p class="desc">FizzBuzz with pluggable rules and an interactive grid: add 7 → Bazz and nothing else changes.</p>
     <div class="meta">
       <a href="https://bradleyhomelinuxnet-prog.github.io/fizzbuzz/">Live demo</a>
       <a href="https://github.com/bradleyhomelinuxnet-prog/fizzbuzz">Source</a>
@@ -121,7 +189,24 @@
     </div>
   </section>
 
-  <footer><a href="https://github.com/bradleyhomelinuxnet-prog">github.com/bradleyhomelinuxnet-prog</a></footer>
+  <h3 class="group" id="elsewhere">Elsewhere</h3>
+
+  <section class="repo">
+    <div class="tier">Portfolio, sites, channels &amp; books</div>
+    <ul class="apps">
+      <li><a href="https://rogue-ventures-portfolio.com/"><b>Rogue Ventures Portfolio</b></a> <span>: work history, services, setup and support</span></li>
+      <li><a href="https://hollywood-rogue-ai-ventures.w3spaces.com/"><b>Hollywood Rogue AI Ventures</b></a> <span>: the w3spaces hub, with mirrors of the PSYFR pages and the Chronotecture atlas</span></li>
+      <li><a href="https://node-bradley.w3spaces.com/"><b>Node site</b></a></li>
+      <li><a href="https://www.youtube.com/@PhoenixChroniclesUniverse"><b>Phoenix Chronicles Universe</b></a> <span>: AI cinematic short films</span> · <a href="https://www.youtube.com/@SuperCoolStuffYouTube"><b>Super Cool Stuff</b></a></li>
+      <li><a href="https://www.amazon.com/dp/B0G3MKSPQ9"><b>The Phoenix CODEX: 138 Palindromic Mirror Edition</b></a> <span>: the book the instruments accompany</span></li>
+      <li><a href="https://www.linkedin.com/in/bradleyrogue"><b>LinkedIn</b></a> · <a href="https://github.com/bradleyhomelinuxnet-prog"><b>GitHub profile</b></a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <span><a href="https://github.com/bradleyhomelinuxnet-prog">github.com/bradleyhomelinuxnet-prog</a> · updated October 2026</span>
+    <span class="sigil" title="read the same returning">19138 · 83191</span>
+  </footer>
 </main>
 </body>
 </html>
